@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Titre -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit Medication"
+            android:textColor="#0d47a1"
+            android:textStyle="bold"
+            android:textSize="26sp"
+            android:gravity="center"
+            android:letterSpacing="0.03"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Ligne décorative -->
+        <View
+            android:layout_width="64dp"
+            android:layout_height="3dp"
+            android:background="#bfa36c"
+            android:layout_gravity="center"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Nom -->
+        <EditText
+            android:id="@+id/editMedName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Medication name"
+            android:textColor="#000000"
+            android:backgroundTint="#0d47a1"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Type -->
+        <EditText
+            android:id="@+id/editType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type (e.g. Tablets)"
+            android:textColor="#000000"
+            android:backgroundTint="#0d47a1"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Fréquence -->
+        <EditText
+            android:id="@+id/editFrequency"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Frequency (e.g. once daily)"
+            android:textColor="#000000"
+            android:backgroundTint="#0d47a1"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Dosage -->
+        <EditText
+            android:id="@+id/editDosage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Dosage (e.g. 1 pill)"
+            android:textColor="#000000"
+            android:backgroundTint="#0d47a1"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Temps -->
+        <EditText
+            android:id="@+id/editTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Time (e.g. 9:00 AM)"
+            android:textColor="#000000"
+            android:backgroundTint="#0d47a1"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Image -->
+        <ImageView
+            android:id="@+id/medImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@android:drawable/ic_menu_gallery"
+            android:background="@android:color/darker_gray"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="24dp"
+            android:contentDescription="Medication Image" />
+
+        <!-- Bouton Mise à jour -->
+        <Button
+            android:id="@+id/btnUpdateMedication"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update"
+            android:textColor="#ffffff"
+            android:backgroundTint="#0d47a1"
+            android:padding="14dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Bouton Suppression -->
+        <Button
+            android:id="@+id/btnDeleteMedication"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:textColor="#ffffff"
+            android:backgroundTint="#d32f2f"
+            android:padding="14dp"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</ScrollView>

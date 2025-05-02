@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/a31"
+    android:padding="16dp">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/profileTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Profile"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#0d47a1"
+        android:letterSpacing="0.02"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp" />
+
+    <!-- Decorative line -->
+    <View
+        android:layout_width="64dp"
+        android:layout_height="3dp"
+        android:background="#bfa36c"
+        app:layout_constraintTop_toBottomOf="@id/profileTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Profile Image -->
+    <ImageView
+        android:id="@+id/profileImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/profile"
+
+        android:background="@android:color/darker_gray"
+        android:scaleType="centerCrop"
+        android:contentDescription="Profile Picture"
+        app:layout_constraintTop_toBottomOf="@id/profileTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="4dp" />
+
+    <!-- Camera Icon -->
+    <ImageView
+        android:id="@+id/cameraIcon"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@android:drawable/ic_menu_camera"
+        android:background="@android:color/white"
+        android:elevation="6dp"
+        android:padding="4dp"
+        android:contentDescription="Edit Photo"
+        app:layout_constraintTop_toTopOf="@id/profileImage"
+        app:layout_constraintEnd_toEndOf="@id/profileImage"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="2dp" />
+
+    <!-- Username -->
+    <EditText
+        android:id="@+id/usernameEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:textColor="#0d47a1"
+        android:backgroundTint="#0d47a1"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:padding="12dp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/profileImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Scrollable Info -->
+    <ScrollView
+        android:id="@+id/scrollContainer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintTop_toBottomOf="@id/usernameEditText"
+        app:layout_constraintBottom_toTopOf="@id/saveButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <!-- Age -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Age" android:textColor="#0d47a1" android:textSize="18sp" android:layout_marginTop="12dp"/>
+            <EditText android:id="@+id/ageEditText" android:layout_width="match_parent" android:layout_height="wrap_content" android:backgroundTint="#0d47a1" android:hint="e.g. 25" android:padding="12dp" android:textColor="#0d47a1" android:inputType="number"/>
+
+            <!-- Gender -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Gender" android:textColor="#0d47a1" android:textSize="18sp" android:layout_marginTop="12dp"/>
+            <EditText android:id="@+id/genderEditText" android:layout_width="match_parent" android:layout_height="wrap_content" android:backgroundTint="#0d47a1" android:hint="Male / Female" android:padding="12dp" android:textColor="#0d47a1"/>
+
+            <!-- Blood Type -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Blood Type" android:textColor="#0d47a1" android:textSize="18sp" android:layout_marginTop="12dp"/>
+            <EditText android:id="@+id/bloodTypeEditText" android:layout_width="match_parent" android:layout_height="wrap_content" android:backgroundTint="#0d47a1" android:hint="A+" android:padding="12dp" android:textColor="#0d47a1"/>
+
+            <!-- Weight -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Weight" android:textColor="#0d47a1" android:textSize="18sp" android:layout_marginTop="12dp"/>
+            <EditText android:id="@+id/weightEditText" android:layout_width="match_parent" android:layout_height="wrap_content" android:backgroundTint="#0d47a1" android:hint="e.g. 70 kg" android:padding="12dp" android:textColor="#0d47a1" android:inputType="numberDecimal"/>
+
+            <!-- Height -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Height" android:textColor="#0d47a1" android:textSize="18sp" android:layout_marginTop="12dp"/>
+            <EditText android:id="@+id/heightEditText" android:layout_width="match_parent" android:layout_height="wrap_content" android:backgroundTint="#0d47a1" android:hint="e.g. 175 cm" android:padding="12dp" android:textColor="#0d47a1" android:inputType="number"/>
+
+            <!-- Allergies -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Allergies" android:textColor="#0d47a1" android:textSize="18sp" android:layout_marginTop="12dp"/>
+            <EditText android:id="@+id/allergiesEditText" android:layout_width="match_parent" android:layout_height="100dp" android:backgroundTint="#0d47a1" android:hint="None" android:padding="12dp" android:textColor="#0d47a1" android:inputType="textMultiLine" android:gravity="top"/>
+
+            <!-- Phone -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Phone Number" android:textColor="#0d47a1" android:textSize="18sp" android:layout_marginTop="12dp"/>
+            <EditText android:id="@+id/phoneEditText" android:layout_width="match_parent" android:layout_height="wrap_content" android:backgroundTint="#0d47a1" android:hint="+216..." android:padding="12dp" android:textColor="#0d47a1" android:inputType="phone"/>
+
+            <!-- Address -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Address" android:textColor="#0d47a1" android:textSize="18sp" android:layout_marginTop="12dp"/>
+            <EditText android:id="@+id/addressEditText" android:layout_width="match_parent" android:layout_height="100dp" android:backgroundTint="#0d47a1" android:hint="Full address" android:padding="12dp" android:textColor="#0d47a1" android:inputType="textMultiLine" android:gravity="top"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Save Button -->
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:backgroundTint="#0d47a1"
+        android:padding="16dp"
+        android:elevation="4dp"
+        android:layout_marginHorizontal="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

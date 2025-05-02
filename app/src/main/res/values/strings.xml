@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">MedAssist</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="navigation_drawer_open">Ouvrir la navigation</string>
+    <string name="navigation_drawer_close">Fermer la navigation</string>
+
+    <string-array name="medication_types">
+        <item>Tablet</item>
+        <item>Syrup</item>
+        <item>Injection</item>
+        <item>Capsule</item>
+    </string-array>
+
+    <string-array name="medication_frequencies">
+        <item>Once daily</item>
+        <item>Twice daily</item>
+        <item>Every 6 hours</item>
+        <item>As needed</item>
+    </string-array>
+    <string name="desc_add_emergency_contact">Add an emergency contact</string>
+    <string name="label_family_name">Name</string>
+
+
+
+
+</resources>

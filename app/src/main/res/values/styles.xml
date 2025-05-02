@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="DayHeader">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_columnWeight">1</item>
+        <item name="android:textColor">#3f3d56</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">6dp</item>
+    </style>
+    <!-- res/values/styles.xml -->
+    <style name="CalendarTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:calendarViewStyle">@style/CustomCalendarView</item>
+    </style>
+
+    <style name="CustomCalendarView" parent="@android:style/Widget.Material.CalendarView">
+        <item name="android:weekDayTextAppearance">@style/WeekDayText</item>
+    </style>
+
+    <style name="WeekDayText" parent="@android:style/TextAppearance.Small">
+        <item name="android:textColor">#a4895f</item>
+    </style>
+
+
+
+    <style name="DayCell">
+        <item name="android:layout_width">32dp</item>
+        <item name="android:layout_height">32dp</item>
+        <item name="android:background">#ffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#a4895f</item>
+    </style>
+    <style name="CardItem">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="android:elevation">4dp</item>
+        <item name="android:padding">12dp</item>
+    </style>
+
+</resources>

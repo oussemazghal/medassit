@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="6dp"
+    app:cardBackgroundColor="#FAFAFA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@drawable/card_border_background">
+
+        <!-- Titre du rendez-vous -->
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rendez-vous avec Dr. Smith"
+            android:textColor="#003366"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Date -->
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🗓️ 15 juin 2025"
+            android:textColor="#444444"
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp" />
+
+        <!-- Lieu -->
+        <TextView
+            android:id="@+id/tvLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📍 Hôpital Central, Sfax"
+            android:textColor="#444444"
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp" />
+
+        <!-- Catégorie -->
+        <TextView
+            android:id="@+id/tvCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🩺 Cardiologie"
+            android:textColor="#bfa36c"
+            android:textStyle="italic"
+            android:textSize="15sp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Actions -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end">
+
+            <ImageView
+                android:id="@+id/ic_edit"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginEnd="12dp"
+                android:src="@drawable/ic_edit"
+                android:tint="#003366"
+                android:contentDescription="Modifier" />
+
+            <ImageView
+                android:id="@+id/ic_delete"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/ic_delete"
+                android:tint="#CC0000"
+                android:contentDescription="Supprimer" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

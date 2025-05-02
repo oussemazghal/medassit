@@ -1,0 +1,86 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add an Appointment"
+        android:textColor="#1A237E"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/editTitle"
+        android:hint="Name"
+        android:textColorHint="#1A237E"
+        android:textColor="#1A237E"
+        android:backgroundTint="#1A237E"
+        android:padding="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/editDate"
+        android:hint="Date (ex: 12/5/2024)"
+        android:textColorHint="#1A237E"
+        android:textColor="#1A237E"
+        android:backgroundTint="#1A237E"
+        android:padding="12dp"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/editLocation"
+        android:hint="Location"
+        android:textColorHint="#1A237E"
+        android:textColor="#1A237E"
+        android:backgroundTint="#1A237E"
+        android:padding="12dp"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp">
+
+        <Button
+            android:id="@+id/btnDoctor"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Doctor"
+            android:background="@android:color/darker_gray"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/btnAnalysis"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Analyse"
+            android:layout_marginStart="8dp"
+            android:backgroundTint="#BBDEFB"
+            android:textColor="#1A237E"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnDoneAppointment"
+        android:text="Create the appointment"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#1A237E"
+        android:padding="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

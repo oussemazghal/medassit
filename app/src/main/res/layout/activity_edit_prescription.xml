@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/a34">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit Prescription"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#003366"
+        android:layout_marginBottom="24dp" />
+
+    <EditText
+        android:id="@+id/editTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Title"
+        android:background="@drawable/search_background"
+        android:padding="12dp"
+        android:textColor="#003366"
+        android:textColorHint="#7a8a99"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/editSource"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Source (e.g., Doctor, Lab)"
+        android:background="@drawable/search_background"
+        android:padding="12dp"
+        android:textColor="#003366"
+        android:textColorHint="#7a8a99"
+        android:layout_marginBottom="16dp" />
+
+    <ImageView
+        android:id="@+id/imagePrescription"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/placeholder"
+        android:scaleType="centerCrop"
+        android:background="@drawable/rounded_button_background"
+        android:layout_marginBottom="24dp"
+        android:contentDescription="Prescription Image" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update Prescription"
+        android:backgroundTint="#003366"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+</LinearLayout>

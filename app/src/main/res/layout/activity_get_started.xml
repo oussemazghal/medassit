@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="top|center_horizontal"
+        android:padding="24dp">
+
+        <!-- IMAGE EN HAUT avec un cadre -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:minHeight="300dp"
+            android:layout_marginBottom="24dp">
+
+            <ImageView
+                android:id="@+id/ivGetStartedImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/image_4"
+                android:contentDescription="Get Started"
+                android:layout_gravity="center" />
+
+            <!-- Cadre autour de l'image -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="bottom"
+                android:background="#CCCCCC" />
+        </FrameLayout>
+
+        <!-- Texte dans un cadre -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f0f0f0"
+            android:padding="16dp"
+            android:layout_marginBottom="24dp">
+
+            <TextView
+                android:id="@+id/tvGetStartedText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Start your journey towards\nimproved health with just one tap.."
+                android:textSize="22sp"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:layout_gravity="center" />
+        </FrameLayout>
+
+        <!-- Bouton Get Started -->
+        <Button
+            android:id="@+id/btnGetStarted"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Get Started"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:background="@drawable/gradient_button_background"
+            android:backgroundTint="@null"
+            android:paddingVertical="18dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginHorizontal="32dp"
+            android:gravity="center"
+            android:elevation="4dp"
+            android:focusable="true"
+            android:clickable="true" />
+    </LinearLayout>
+
+</ScrollView>

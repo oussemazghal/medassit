@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gold_bfa36c">#bfa36c</color>
+    <color name="beige_fff5dd">#fff5dd</color>
+    <color name="brown_a4895f">#a4895f</color>
+    <color name="light_blue">#E0F2FF</color>
+
+
+        <color name="dark_brown_3f3d56">#3f3d56</color>
+
+
+
+
+</resources>

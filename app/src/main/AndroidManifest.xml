@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.myapplication">
+
+    <!-- Permissions générales -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE"
+        tools:ignore="PermissionImpliesUnsupportedChromeOsHardware" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+
+    <!-- Fonctionnalité optionnelle -->
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+
+        <!-- ✅ Déclaration correcte du BroadcastReceiver -->
+        <receiver
+            android:name=".NotificationReceiver"
+            android:exported="true"
+            android:enabled="true" />
+
+        <!-- Activité de lancement -->
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Liste des autres activités -->
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".EmergencyActivity" />
+        <activity android:name=".ScanPrescriptionActivity" />
+        <activity android:name=".OnboardingActivity" android:exported="false" />
+        <activity android:name=".MainActivity" android:exported="false" />
+        <activity android:name=".GetStartedActivity" />
+        <activity android:name=".SignUpActivity" android:label="Sign Up" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".AppointmentsActivity" />
+        <activity android:name=".MedicationsActivity" />
+        <activity android:name=".AddMedicationActivity" />
+        <activity android:name=".PrescriptionsActivity" />
+        <activity android:name=".ScheduleActivity" />
+        <activity android:name=".EditMedicationActivity" />
+        <activity android:name=".AddPrescriptionActivity" />
+        <activity android:name=".EditPrescriptionActivity" />
+        <activity android:name=".ChatbotActivity" />
+
+
+    </application>
+
+</manifest>

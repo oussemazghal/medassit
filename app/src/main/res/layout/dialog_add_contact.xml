@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#F2F4F7">
+
+    <!-- Titre -->
+    <TextView
+        android:text="Add a Contact"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#0D47A1"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- Champ nom -->
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:background="@android:drawable/edit_text"
+        android:padding="12dp"
+        android:textColor="#000000"
+        android:textColorHint="#607D8B"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Champ téléphone -->
+    <EditText
+        android:id="@+id/editPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Telephone Number"
+        android:inputType="phone"
+        android:background="@android:drawable/edit_text"
+        android:padding="12dp"
+        android:textColor="#000000"
+        android:textColorHint="#607D8B"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Bouton image -->
+    <Button
+        android:id="@+id/btnUploadImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Image"
+        android:textColor="#0D47A1"
+        android:backgroundTint="#E3F2FD"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Bouton final -->
+    <Button
+        android:id="@+id/btnDone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#0D47A1"
+        android:elevation="2dp" />
+</LinearLayout>

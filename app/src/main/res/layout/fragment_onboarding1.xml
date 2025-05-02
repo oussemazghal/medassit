@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingStart="24dp"
+    android:paddingEnd="24dp"
+    android:paddingTop="24dp"
+    android:paddingBottom="16dp"
+    android:gravity="top|center_horizontal"
+    android:background="#ffffff">
+
+    <!-- IMAGE très grande -->
+    <ImageView
+        android:id="@+id/ivOnboarding1"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+    android:adjustViewBounds="true"
+    android:scaleType="fitCenter"
+    android:src="@drawable/image_1"
+    android:contentDescription="Medications" />
+
+    <!-- TITRE rapproché -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Medications"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="#1E3A8A"
+        android:gravity="center"
+        android:layout_marginTop="8dp" />
+
+    <!-- SOUS-TITRE encore plus rapproché -->
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Never miss a dose and take\ncontrol of your health."
+        android:textSize="22sp"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:layout_marginTop="4dp" />
+</LinearLayout>

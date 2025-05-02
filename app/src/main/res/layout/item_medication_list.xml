@@ -1,0 +1,99 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    android:layout_marginBottom="16dp"
+    android:layout_marginHorizontal="16dp"
+    android:elevation="6dp"
+    android:clipToPadding="false"
+    android:background="#ffffff"
+    android:gravity="center_vertical">
+
+    <!-- Image Médicament -->
+    <ImageView
+        android:id="@+id/medImageCard"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="16dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/placeholder"
+        android:contentDescription="Medication image"
+        android:background="@drawable/rounded_image_background" />
+
+    <!-- Infos Médicament -->
+    <LinearLayout
+        android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:orientation="vertical"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/tvMedicationName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Paracetamol"
+        android:textColor="#0d47a1"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="4dp" />
+
+    <TextView
+        android:id="@+id/tvMedicationDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="500mg - Twice a day"
+        android:textColor="#616161"
+        android:textSize="16sp"
+        android:layout_marginTop="2dp" />
+
+    <TextView
+        android:id="@+id/tvMedicationType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Type: Tablet"
+        android:textColor="#8d6e63"
+        android:textSize="14sp"
+        android:layout_marginTop="2dp" />
+
+    <TextView
+        android:id="@+id/tvMedicationTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Date de termination: 2024-06-01"
+        android:textColor="#8d6e63"
+        android:textSize="14sp"
+        android:layout_marginTop="2dp" />
+</LinearLayout>
+
+    <!-- Boutons -->
+<LinearLayout
+android:layout_width="wrap_content"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:gravity="center_vertical"
+android:layout_marginStart="8dp">
+
+<ImageView
+    android:id="@+id/iconEdit"
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:src="@drawable/ic_edit"
+    android:padding="8dp"
+    android:contentDescription="Edit"
+    app:tint="#0d47a1" />
+
+<ImageView
+    android:id="@+id/iconDelete"
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:layout_marginTop="12dp"
+    android:src="@drawable/ic_delete"
+    android:padding="8dp"
+    android:contentDescription="Delete"
+    app:tint="#d32f2f" />
+</LinearLayout>
+
+    </LinearLayout>
